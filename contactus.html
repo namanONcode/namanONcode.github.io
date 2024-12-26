@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Us - Naman Jain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(18, 18, 62);
+      padding: 0 20px;
+    }
+    nav ul {
+      display: flex;
+    }
+    nav ul li {
+      list-style: none;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+    }
+    nav ul li a:hover {
+      color: rgb(154, 154, 226);
+      font-size: 1.04rem;
+    }
+    .contact-section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .contact-section h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #9e52ef;
+    }
+    .contact-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+    .contact-info div {
+      width: 45%;
+      text-align: left;
+    }
+    .contact-info div h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #9e52ef;
+    }
+    .contact-info div p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .contact-form {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgb(18, 18, 62);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      background-color: #2e2e7b;
+      border: 2px solid #fff;
+      border-radius: 6px;
+      color: white;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      width: 100%;
+      padding: 15px;
+      background-color: #2e2e7b;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: white;
+    }
+    .contact-form button:hover {
+      background-color: #9e52ef;
+    }
+    footer {
+      background-color: #0e0e1a;
+      padding: 20px 0;
+      text-align: center;
+      color: gray;
+    }
+    footer a {
+      text-decoration: none;
+      color: #9e52ef;
+    }
+    footer a:hover {
+      color: #ffffff;
+    }
+    @media (max-width: 768px) {
+      .contact-info {
+        flex-direction: column;
+        text-align: center;
+      }
+      .contact-info div {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="left">namanOnCode</div>
+    <div class="right">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="contact-section">
+    <h1>Contact Me</h1>
+    <div class="contact-info">
+      <div>
+        <h3>Get in Touch</h3>
+        <p>If you have any questions or would like to discuss a project, feel free to reach out to me via the contact form below or through my email and social links.</p>
+      </div>
+      <div>
+        <h3>Contact Details</h3>
+        <p><strong>Email:</strong> <a href="mailto:naman342jain@gmail.com" style="color: #9e52ef;">naman342jain@gmail.com</a></p>
+        <p><strong>Phone:</strong> +91 9625175131</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/namanONcode" target="_blank" style="color: #9e52ef;">namanONcode</a></p>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send a Message</h3>
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSfeTqLXLVa_E-XGbtn-YMK_SZLPOiIyLfQyA1TNYxpKzxNLvQ/viewform?usp=dialog" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2024 Naman Jain | <a href="https://github.com/namanONcode" target="_blank">Visit my Github</a></p>
+</footer>
+
+</body>
+</html>
