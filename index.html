@@ -178,6 +178,110 @@
         .leftsection .buttons{
             padding: 50px 0px;
         }
+        @media screen and (max-width: 480px) {
+    body {
+        /* Reverting to the original layout */
+        display: unset;
+        flex-direction: unset;
+        min-height: unset;
+    }
+
+    footer {
+        /* Reverting the footer margin-top */
+        margin-top: unset;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    div.right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: -2px;
+    }
+    div.right ul {
+        display: flex;
+        flex-direction: unset; /* Reset flex-direction */
+        align-items: center;
+        padding: 28px;
+        margin: -16px;
+        margin-left: 89px;
+    }
+    div.right ul li {
+        list-style: none;
+        margin: 10px 0;
+        width: auto; /* Adjust width to fit content */
+        text-align: center;
+    }
+    div.right ul li a {
+        display: block;
+        padding: 12px 20px;
+        background-color: #2e2e7b;
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 25px;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+    }
+    div.right ul li a:hover {
+        background-color: #9e52ef;
+    }
+    .rightsection img {
+        display: none;
+    }
+    section.second {
+        display: none;
+    }
+
+    /* Footer adjustments for mobile */
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        align-items: flex-start;
+    }
+    .footer-first, .footer-second, .footer-third, .footer-fourth {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .footer-rights {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Adjust .leftsection for mobile */
+    .leftsection {
+        width: 30%;
+        margin: 70px 0;
+        font-size: 2.5rem;
+        display: block;
+        align-items: flex-start;
+    }
+    .leftsection {
+        margin-left: -20px;
+    }
+
+    div.left {
+        margin-left: 20px;
+        margin-right: 23px;
+    }
+
+    .leftsection .btn {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+}
+
     </style>
 </head>
 <body>
